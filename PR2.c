@@ -16,7 +16,7 @@ int main()
 	printf("enter the number of days less than a year:");
 	scanf("%d",&a);
 	printf("\n");
-	if (a > 365) 
+	if (a > 365 || a<0) 
 		goto mark2; 
 	printf("\n");
 
@@ -45,7 +45,7 @@ int main()
 			b = b + (b * 15 / 100); 
 	} 
 
-	printf("summa za god: %li \n",b); 
+	printf("The amount for the period of %d days: %li \n",a,b); 
 
 	return (0);
 }
