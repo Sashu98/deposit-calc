@@ -4,13 +4,21 @@ int main()
 {
 	int a;
 	long int b;
+
+	mark1:
 	printf("enter the inital sum of more than 10000:");
 	scanf("%li",&b);
 	printf("\n");
-
+	if (b < 10000) 
+	goto mark1;
+	
+	mark2:
 	printf("enter the number of days less than a year:");
 	scanf("%d",&a);
 	printf("\n");
+	goto mark2; 
+	printf("\n");
+
 
 	if (b<100000)
 	{
